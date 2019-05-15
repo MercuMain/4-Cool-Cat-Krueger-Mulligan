@@ -2,7 +2,7 @@
     background-color: #ff2b07;
 }
 
-.Row {
+.notmtrow {
     display: table;
     width: 100%;
     /*Optional*/
@@ -12,7 +12,11 @@
     /*Optional*/
 }
 
-.Column {
+.cardshades {
+    box-shadow: 5px 5px 5px black;
+}
+
+.notmtcolumn {
     display: table-cell;
 }
 
@@ -21,10 +25,16 @@ img {
     height: auto;
 }
 
+.card:hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+}
+
 .subtexts {
     color: white;
     text-align: center;
-    font-size: 150%
+    text-shadow: 3px 3px 5px black;
 }
 
 .logoimg {
@@ -41,23 +51,22 @@ img {
     .bigboibutton {
         display: none;
     }
+    
+    .halfpercent {
+        width: 100%
+    }
+    
 
 }
 
 @media only screen and (max-width: 992px) {
     
     .logoimg {
-/*        width: 36%;
-        text-align: center;
-        float: none;*/
         display: none;
     }
     
-    /*.Row {
-        display: none;
-    }
-    */
     .smallonmobile {
         width: 10%
     }
+    
 }
