@@ -2,22 +2,9 @@
     background-color: #ff2b07;
 }
 
-.notmtrow {
-    display: table;
-    width: 100%;
-    /*Optional*/
-    table-layout: fixed;
-    /*Optional*/
-    border-spacing: 20px;
-    /*Optional*/
-}
 
 .cardshades {
     box-shadow: 5px 5px 5px black;
-}
-
-.notmtcolumn {
-    display: table-cell;
 }
 
 img {
@@ -29,6 +16,16 @@ img {
     transition: all .2s ease-in-out;
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.01);
+}
+
+.buyimage {
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.buyimage2 {
+    display: none;
 }
 
 .subtexts {
@@ -47,26 +44,40 @@ img {
 }
 
 
+
 @media only screen and (min-width: 992px) {
     .bigboibutton {
         display: none;
     }
-    
+
     .halfpercent {
         width: 100%
     }
-    
+
 
 }
 
 @media only screen and (max-width: 992px) {
-    
+
     .logoimg {
         display: none;
     }
-    
+
     .smallonmobile {
         width: 10%
     }
-    
+
+    .buyimage {
+        display: none;
+    }
+
+    .buyimage2 {
+        display: block;
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
