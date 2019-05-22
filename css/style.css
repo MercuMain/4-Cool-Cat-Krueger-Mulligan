@@ -12,9 +12,6 @@ img {
     height: auto;
 }
 
-.sansundertale {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
 
 .card:hover {
     transition: all .2s ease-in-out;
